@@ -1,0 +1,26 @@
+{
+    "name": "Mobile BSN",
+    "short_name": "MobBSN",
+    "description": "Mobile...",
+    "orientation": "portrait",
+    "background_color": "#f1f1f1",
+    "theme_color": "#f0f0f0",
+    "start_url": "index.html",
+    "icons": [
+        {
+            "src": "imgs/icon-256.png",
+            "type": "ïmage/png",
+            "size": "256x256"
+        },
+        {
+            "src": "imgs/icon-196.png",
+            "type": "ïmage/png",
+            "size": "196x196"
+        },
+        {
+            "src": "imgs/icon-144.png",
+            "type": "ïmage/png",
+            "size": "144x144"
+        }
+    ]
+}
