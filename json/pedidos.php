@@ -26,7 +26,7 @@
         $res->execute();
         while ($l = $res->fetch(PDO::FETCH_OBJ)) {
             $l->imagem = 
-                    "http://http://localhost/www/AkiExpress/imgs/".$l->imagem;
+                    "http://localhost/www/AkiExpress/imgs/".$l->imagem;
             $dados[$l->id]=$l;
         }
     }
