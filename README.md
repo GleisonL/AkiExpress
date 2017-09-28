@@ -1,6 +1,6 @@
 # AkiExpress
 
-# Aula de Programação de App Móveis
+# Aula de Programação de Aplicativos Móveis
 
 Gleison Lichtenfels
 
