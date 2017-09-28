@@ -26,7 +26,7 @@
         $res->execute();
         while ($l = $res->fetch(PDO::FETCH_OBJ)) {
             $l->imagem = 
-                    "http://localhost/imgs/".$l->imagem;
+                    "http://localhost:41062/www/www/pwa/app_aula_mobile/imgs/".$l->imagem;
             $dados[$l->id]=$l;
         }
     }

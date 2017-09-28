@@ -12,7 +12,7 @@
         $res = $pdo->prepare($sql);
     } else if ($op == 1) {
         include_once 'produtos_busca.php';
-    } else if ($op == "destaque") {
+    } else if ($op == "destaques") {
         include_once 'produtos_destaque.php';
     } else if ($op == "produto") {
         $id = $_GET["id"];
@@ -36,7 +36,8 @@
     $res->execute();
     while ($l = $res->fetch(PDO::FETCH_OBJ)) {
         $l->imagem = "<img "
-                . "src=\"URL/imagens/{$l->imagem}\">";
+                . "src=\"http://localhost:41062/www/www/pwa/app_aula_mobile/imgs"
+                . "/{$l->imagem}\">";
         $l->valor = number_format($l->valor,
                 2, ",", ".");
         $dados[$l->id] = $l;
