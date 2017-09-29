@@ -7,7 +7,7 @@ $(document).ready(function() {
         var dados = JSON.parse(c);
         preencherDados(dados);
     } else {
-        $.getJSON("http://localhost/www/AkiExpress/json/produtos.php?op=categoria&id="+id,
+        $.getJSON("http://localhost/AkiExpress/json/produtos.php?op=categoria&id="+id,
         function() {
             $("#msg").html(
             "<div class='alert alert-warnig'>\n\

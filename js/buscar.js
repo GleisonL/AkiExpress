@@ -3,7 +3,7 @@ $(document).ready(function() {
     
     $("#msg").html("<img src='imgs/load.git'/> Aguarde, carregando.");
     
-    $.getJSON("http://localhost/www/AkiExpress/json/produtos.php?op=busca&palavra="+palavra, function() {
+    $.getJSON("http://localhost/AkiExpress/json/produtos.php?op=busca&palavra="+palavra, function() {
         
     }).done(function(dados) {
         $.each(dados, function(key, val) {

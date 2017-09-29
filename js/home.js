@@ -11,7 +11,7 @@ $(document).ready(function() {
 	} else {
 
 		//buscar os produtos em destaque
-		$.getJSON("http://localhost/www/AkiExpress/json/produtos.php?op=destaques",
+		$.getJSON("http://localhost/AkiExpress/json/produtos.php?op=destaques",
 			function() {
 
 			$("#msg").html("<div class='alert alert-warning'><img src='imgs/load.gif'> Carregando...</div>");

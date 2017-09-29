@@ -11,7 +11,7 @@ $(document).ready(function() {
         var email = $("#email").val();
         var senha = $("#senha").val();
         
-        $.post("http://localhost/www/AkiExpress/json/login.php",
+        $.post("http://localhost/AkiExpress/json/login.php",
             {email:email,senha:senha},
             function(dados) {
                 var msg = dados.split(";");
@@ -70,7 +70,7 @@ $(document).ready(function() {
         preencherCategorias(cache);
     } else {
         console.log("Carregando menu do JSON");
-        $.getJSON("http://localhost/www/AkiExpress/json/categorias.php",
+        $.getJSON("http://localhost/AkiExpress/json/categorias.php",
         function() {
             $("#msg").html(
                 "<div class='alert alert-danger'>\n\

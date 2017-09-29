@@ -36,7 +36,7 @@
     $res->execute();
     while ($l = $res->fetch(PDO::FETCH_OBJ)) {
         $l->imagem = "<img "
-                . "src=\"http://localhost/www/AkiExpress/imgs"
+                . "src=\"http://localhost/AkiExpress/imgs"
                 . "/{$l->imagem}\">";
         $l->valor = number_format($l->valor,
                 2, ",", ".");

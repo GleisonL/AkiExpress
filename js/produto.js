@@ -9,7 +9,7 @@ $(document).ready(function() {
         dados = JSON.parse(localStorage.getItem("produto"));
         preencherProdutos(dados);
     } else {
-        $.getJSON("http://localhost/www/AkiExpress/json/produtos.php?op=produto&id="+id,function() {
+        $.getJSON("http://localhost/AkiExpress/json/produtos.php?op=produto&id="+id,function() {
             
         }).done(function(dados) {
             console.log("Carregado da API");
